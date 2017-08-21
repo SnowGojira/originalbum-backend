@@ -27,9 +27,21 @@
     <img class="title" src="img/title.png"/>
     <input type="text" id="account"/>
     <input type="text" id="password"/>
-    <button>登录</button>
+    <div id="loginButton">
+        <img id="logImg" src="img/logBtn.png"/>
+    </div>
+
 </div>
 
+<script src="js/jquery-3.2.1.min.js"></script>
+<script>
+        //Login Button
+        $('#logImg').hover(function () {
+            $(this).attr("src","img/logBtn_hover.png");
+        },function () {
+            $(this).attr("src","img/logBtn.png");
+        });
 
+</script>
 </body>
 </html>
